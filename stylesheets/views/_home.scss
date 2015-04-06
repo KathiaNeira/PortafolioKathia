@@ -1,0 +1,352 @@
+html,
+body{
+	height: 100%;
+}
+
+.main {
+  position: fixed;
+  z-index: 31;
+  left: 0;
+  top: 0;
+  background: #1d2123;
+  width: 100%;
+  padding: 10px;
+  .navbar-nav{
+    ul{
+      visibility: visible;
+    li{
+      a{
+        color: white;
+        font-family: serif;
+        font-size: 20px;
+      }
+    }
+  }
+  }
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+  color: rgb(28, 255, 148);
+}
+
+
+@media screen and (min-width: 1000px){
+.main {
+  width: 88px;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  visibility: hidden;
+  ul{
+    visibility: hidden;
+  }
+  }
+}
+
+.navbar-header{
+  	 float: right;
+}
+
+.main{
+	.imagen{
+		img{
+			width: 100%;
+			}
+	}
+}
+
+@media screen and (min-width: 100px){
+	.imagen{
+			width: 20%;
+			display: inline-block;
+		}
+	}
+
+
+@media screen and (min-width: 1000px){
+	.imagen{
+			width: 100%;
+		}
+	}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  padding-left:0;
+}
+
+
+#section-scroll {
+  position: fixed;
+  top: 42%;
+  right: 0;
+  z-index: 10000;
+  ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  min-height: 50px;
+  background-color: rgba(255,255,255,0.7);
+  padding: 9px 0 9px 9px;
+   li {
+  text-align: right;
+  padding: 3px 7px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #8be5ff;
+  a {
+  display: block;
+  text-align: right;
+  color: #323232;
+  position: relative;
+  padding-right: 18px;
+  }
+  a:hover{
+    color: #338FE0;
+    text-decoration: none;
+  }
+  }
+  }
+  }
+
+#portada{
+    width: 95%;
+    height: 100%;
+    right: 0;
+    background: url(../img/lp1.jpg) no-repeat center center scroll;
+    background-size: cover;
+    background-attachment: fixed;
+    .portada{
+      position: relative;
+    	vertical-align: middle;
+    	text-align: center;
+    	display: table;
+    	height: 100%;
+      width:100%;
+    	.text-vertical-center{
+    		display: table-cell;
+    		text-align: center;
+    		vertical-align: middle;
+    		h1{
+    			color: white;
+          font-family: 'Lobster', cursive;
+  				font-size: 70px;
+  				letter-spacing: 1px;
+          margin-bottom: 0;
+    		}
+        p{
+            line-height: 25px;
+        }
+        button{
+            background-color: tomato;
+            border: 2px solid white;
+            border-radius: 0;
+            padding: 7px 50px;
+            font-size: 20px;
+            color: white;
+            a{
+            color:rgb(28, 255, 148);
+            text-decoration: none;
+            }
+             }
+    	}
+
+    }
+}
+
+@media screen and (min-width: 100px){
+	#portada {
+		width: 100%;
+	}
+}
+
+#nosotros {
+  padding: 70px 0; 
+  h2{
+      padding-bottom: 50px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 40px;
+  }
+  hr{
+      border: 1px solid gray;
+      width: 30%;
+      margin-bottom: 60px;
+  }
+  .nosotros{
+  img{
+  width:100%
+  }
+  }
+  }
+
+/*#contact{
+    padding-top: 70px;
+    background: url(../img/contact.jpg) no-repeat;
+    background-size: cover;
+  .imagen{
+    width: 20%;
+    img{
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  p{
+      padding: 50px 0;
+  }
+  button{
+            background-color: transparent;
+            border: 2px solid white ;
+            border-radius: 0;
+            padding: 7px 50px;
+            font-size: 20px;
+            color: white;
+             }
+}*/
+
+
+#works{
+  background-color: rgb(237, 236, 236);
+  h2{
+      margin-bottom: 40px;
+      color: black;
+      font-size: 50px;
+      margin-top: 35px;
+      font-family: 'Dancing Script', cursive;
+  }
+  .trabajos{
+      padding-bottom: 35px;
+  }
+  .work{
+    position: relative;
+    img{
+      width: 100%;
+     }
+    }
+     .overlay{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 60px;
+      button{
+          background-color: transparent;
+          border: 2px solid white;
+          font-size: 20px;
+          color: white;
+      }
+     }
+}
+
+.overlay{
+h4,
+button,
+p{
+   visibility: hidden;
+}
+}
+
+.overlay:hover{
+  background-color: rgba(3, 1, 0, 0.8);
+}
+ 
+.overlay:hover h4,
+.overlay:hover button,
+.overlay:hover p {
+  visibility: visible;
+  }
+
+#skill{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    .skill{
+      h3{
+        font-family: 'Dancing Script', cursive;
+        font-size: 40px;
+      }
+       p{
+        color: rgb(63, 57, 57);
+        line-height: 20px;
+        text-align: justify;
+       }
+    }
+    .media-left{
+      width: 20%;
+      img{
+        width: 100%;
+      }
+    }
+    .media-body{
+        text-align: justify;
+      h4{
+        font-family: monospace;
+        font-weight: bold;
+      }
+    }
+    .responsive{
+  img{
+  width:100%;
+  }
+  }
+  .imagen{
+  width:20%;
+  img{
+  width:100%;
+  }
+  }
+  .skilltop{
+    margin-top: 21px;
+  }
+  .skillbottom{
+    margin-top: 50px;
+  }
+}
+
+
+
+footer{
+    background: url(../img/contact.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    h2{
+        font-family: 'Dancing Script', cursive;
+        font-size: 50px;
+        margin-top: 0;
+        padding-top: 50px;
+    }
+    p{
+        padding: 14px 0;
+    }
+   .btn-custom{
+      background-color: tomato;
+      border: 2px solid white;
+      border-radius: 0;
+      padding: 7px 50px;
+      font-size: 20px;
+      color: white;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+        }
+    .redes{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      .rs{
+        width: 3%;
+        display: inline-block;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    hr{
+        width: 83%;
+    }
+}
+
+
+@media screen and (min-width: 100px){
+  .rs {
+    width: 20%;
+  }
+}
