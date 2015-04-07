@@ -5640,8 +5640,13 @@ body {
       font-family: serif;
       font-size: 20px; }
 
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif; }
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #1cff94; }
+  color: tomato; }
 
 @media screen and (min-width: 1000px) {
   .main {
@@ -5685,7 +5690,7 @@ body {
       padding: 3px 7px;
       border-right-style: solid;
       border-right-width: 1px;
-      border-right-color: #8be5ff; }
+      border-right-color: tomato; }
       #section-scroll ul li a {
         display: block;
         text-align: right;
@@ -5739,15 +5744,25 @@ body {
 #nosotros {
   padding: 70px 0; }
   #nosotros h2 {
-    padding-bottom: 50px;
-    font-family: 'Dancing Script', cursive;
+    padding-bottom: 40px;
+    font-family: 'Lobster Two', cursive;
     font-size: 40px; }
+  #nosotros p {
+    font-family: 'Roboto', sans-serif; }
   #nosotros hr {
-    border: 1px solid gray;
-    width: 30%;
+    border: 1px solid tomato;
+    width: 10%;
     margin-bottom: 60px; }
-  #nosotros .nosotros img {
-    width: 100%; }
+  #nosotros .nosotros {
+    padding: 14px; }
+    #nosotros .nosotros h3 {
+      font-size: 30px;
+      font-family: serif; }
+    #nosotros .nosotros .photo {
+      width: 50%;
+      margin: 0 auto; }
+    #nosotros .nosotros img {
+      width: 100%; }
 
 /*#contact{
     padding-top: 70px;
@@ -5774,14 +5789,20 @@ body {
 }*/
 #works {
   background-color: #edecec; }
+  #works hr {
+    border: 1px solid tomato;
+    width: 10%; }
   #works h2 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: black;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 35px;
-    font-family: 'Dancing Script', cursive; }
+    font-family: 'Lobster Two', cursive; }
+  #works p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; }
   #works .trabajos {
-    padding-bottom: 35px; }
+    padding-bottom: 40px; }
   #works .work {
     position: relative; }
     #works .work img {
@@ -5791,7 +5812,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    padding: 60px; }
+    padding: 20%; }
     #works .overlay button {
       background-color: transparent;
       border: 2px solid white;
@@ -5815,12 +5836,13 @@ body {
   padding-top: 70px;
   padding-bottom: 100px; }
   #skill .skill h3 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster Two', cursive;
     font-size: 40px; }
   #skill .skill p {
     color: #3f3939;
     line-height: 20px;
-    text-align: justify; }
+    text-align: justify;
+    font-family: 'Roboto', sans-serif; }
   #skill .media-left {
     width: 20%; }
     #skill .media-left img {
@@ -5830,6 +5852,8 @@ body {
     #skill .media-body h4 {
       font-family: monospace;
       font-weight: bold; }
+    #skill .media-body p {
+      font-family: 'Roboto', sans-serif; }
   #skill .responsive img {
     width: 100%; }
   #skill .imagen {
@@ -5847,12 +5871,14 @@ footer {
   padding-top: 50px;
   padding-bottom: 20px; }
   footer h2 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster Two', cursive;
     font-size: 50px;
     margin-top: 0;
     padding-top: 50px; }
   footer p {
-    padding: 14px 0; }
+    padding: 14px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; }
   footer .btn-custom {
     background-color: tomato;
     border: 2px solid white;
@@ -5874,8 +5900,8 @@ footer {
   footer hr {
     width: 83%; }
 
-@media screen and (min-width: 100px) {
-  .rs {
+@media screen and (max-width: 450px) {
+  footer .redes .rs {
     width: 20%; } }
 .header {
   background: url(../img/header-contact.jpg) no-repeat;
@@ -5897,6 +5923,8 @@ footer {
   padding-top: 65px;
   font-size: 22px;
   padding-bottom: 35px; }
+  #text p {
+    font-family: 'Roboto', sans-serif; }
 
 #contacto {
   padding: 70px 0px; }
@@ -5906,9 +5934,11 @@ footer {
     padding: 30px 0; }
   #contacto h2 {
     text-align: left;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-family: 'Lobster Two', cursive; }
   #contacto p {
-    line-height: 30px; }
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif; }
   #contacto button {
     margin-top: 30px;
     padding: 7px 52px;
@@ -5921,6 +5951,9 @@ footer {
   background: url(../img/contact.jpg) no-repeat;
   padding-top: 70px;
   background-size: cover; }
+  #contact h2 {
+    font-family: 'Lobster Two', cursive;
+    margin-top: 30px; }
   #contact .imagen {
     width: 20%;
     display: inline-block; }
@@ -5928,7 +5961,10 @@ footer {
       width: 100%;
       border-radius: 50%; }
   #contact p {
-    padding: 50px 0; }
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 50px;
+    font-size: 20px; }
   #contact button {
     background-color: transparent;
     border: 2px solid white;
@@ -5940,6 +5976,9 @@ footer {
 #redes {
   background-color: tomato;
   padding: 70px 0; }
+  #redes h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px; }
   #redes .redes {
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -5953,6 +5992,9 @@ footer {
   background-color: #c04631;
   border-radius: 50%; }
 
+@media screen and (max-width: 450px) {
+  #redes .redes .rs {
+    width: 20%; } }
 .p-0 {
   padding: rem(0) !important;
   padding: 0px !important; }
